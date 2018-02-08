@@ -32,13 +32,13 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new MondayFragment();
+                return DayFragment.newInstance(R.string.monday);
             case 1:
-                return new TuesdayFragment();
+                return DayFragment.newInstance(R.string.tuesday);
             case 2:
-                return new WednesdayFragment();
+                return DayFragment.newInstance(R.string.wednesday);
             default:
-                return new FunnyDayFragment();
+                return DayFragment.newInstance(R.string.funnyday);
         }
     }
 
